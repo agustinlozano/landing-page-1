@@ -17,6 +17,10 @@ body {
     max-width: 180px;
 }
 
+.navbar-toggler { 
+    font-size: 40px !important; 
+}
+
 /* Acomodando el layout */
 .navbar-collapse {
     flex-grow: 0 !important;

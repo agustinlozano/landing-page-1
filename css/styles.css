@@ -1,6 +1,40 @@
 body {
     font-family: 'Titillium Web', sans-serif;
+    background-color: white;
 }
+
+h1 {
+    font-size: 60px !important;
+    font-weight: 600;
+    line-height: 80px !important; 
+} 
+
+p {
+    font-size: 18px;
+    color: #999999;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.topmargin-xs { margin-top: 15px !important; }
+.topmargin-sm { margin-top: 30px !important; }
+.topmargin-lg { margin-top: 65px !important; }
+
+.btn {
+    font-size: 14px !important;
+    padding: 15px 26px !important;
+    min-width: 160px !important;
+    border-radius: 2px !important;
+    display: inline-block !important;
+}
+
+.btn-light {
+    background-color: white !important;
+    color: #1a1a1a !important;
+    border: 2px solid white !important;
+}
+
+.btn ion-icon { font-size: 14px !important; margin-left: 5px !important;}
 
 .navbar {
     background-color: white;
@@ -21,7 +55,34 @@ body {
     font-size: 40px !important; 
 }
 
+#hero {
+    background-image: url("https://i.imgur.com/8yWVnUg.jpg");
+    background-size: cover;
+    min-height: 600px;
+    padding-top: 90px;
+    color: #ffffff;
+}
+
+#hero p {
+    color: white;
+}
+
+.content-center {
+    max-width: 800px;
+    margin: 0 auto 60px auto ;
+    text-align: center;
+}
+
 /* Acomodando el layout */
 .navbar-collapse {
     flex-grow: 0 !important;
+}
+
+/* Media queryes bootstrap */
+
+@media (max-width: 575.98px) { 
+    h1 {
+        font-size: 40px !important; 
+        line-height: normal !important;
+    }
 }

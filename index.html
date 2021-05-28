@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo Bootstrap</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="images/pngwing.com.png" alt="logo" class="logo-brand"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -47,11 +47,85 @@
         <div class="container">
             <div class="content-center topmargin-lg">
                 <h1>Website Design and Development</h1>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#" class="btn btn-light topmargin-sm">Explore Now <ion-icon name="caret-forward-outline"></ion-icon></a>
+                <a href="#" class="btn btn-light topmargin-sm">Explore Now <ion-icon name="caret-forward-outline">
+                    </ion-icon></a>
             </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container-fluid">
+            <div class="content-center topmargin-lg">
+                <h2>We work with exiting brands to build <b>amazing products</b></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2>Keep Calm and Eat</h2>
+                        </a>
+                        <a href="#">
+                            <p>- App/Digital Product</p>
+                        </a>
+                    </div>
+                    <img src="images/portfolio-01.jpg" class="img-fluid" alt="portfolio-1">
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2>New Horizons</h2>
+                        </a>
+                        <a href="#">
+                            <p>- App/Digital Product</p>
+                        </a>
+                    </div>
+                    <img src="images/portfolio-02.jpg" class="img-fluid" alt="portfolio-1">
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2>Urban Oasis</h2>
+                        </a>
+                        <a href="#">
+                            <p>- App/Digital Product</p>
+                        </a>
+                    </div>
+                    <img src="images/portfolio-03.jpg" class="img-fluid" alt="portfolio-1">
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="portfolio-container">
+                    <div class="portfolio-details">
+                        <a href="#">
+                            <h2>No Speed Limits</h2>
+                        </a>
+                        <a href="#">
+                            <p>- App/Digital Product</p>
+                        </a>
+                    </div>
+                    <img src="images/portfolio-04.jpg" class="img-fluid" alt="portfolio-1">
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center topmargin-sm">
+            <p>Ready to accelerate your project?</p>
+            <a href="#" class="text-dark">Just let us know</a>
         </div>
     </section>
 

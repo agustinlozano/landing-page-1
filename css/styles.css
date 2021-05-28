@@ -4,10 +4,15 @@ body {
 }
 
 h1 {
-    font-size: 60px !important;
+    font-size: 60px;
     font-weight: 600;
-    line-height: 80px !important; 
+    line-height: 80px; 
 } 
+
+h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
 
 p {
     font-size: 18px;
@@ -16,25 +21,33 @@ p {
     margin-bottom: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+.a:hover {
+    text-decoration: none;
+}
+
 .topmargin-xs { margin-top: 15px !important; }
 .topmargin-sm { margin-top: 30px !important; }
-.topmargin-lg { margin-top: 65px !important; }
+.topmargin-lg { margin-top: 95px !important; }
 
 .btn {
-    font-size: 14px !important;
-    padding: 15px 26px !important;
-    min-width: 160px !important;
-    border-radius: 2px !important;
-    display: inline-block !important;
+    font-size: 14px;
+    padding: 15px 26px;
+    min-width: 160px;
+    border-radius: 2px;
+    display: inline-block;
 }
 
 .btn-light {
-    background-color: white !important;
-    color: #1a1a1a !important;
-    border: 2px solid white !important;
+    background-color: white;
+    color: #1a1a1a;
+    border: 2px solid white;
 }
 
-.btn ion-icon { font-size: 14px !important; margin-left: 5px !important;}
+.btn ion-icon { font-size: 14px; margin-left: 5px; }
 
 .navbar {
     background-color: white;
@@ -43,7 +56,7 @@ p {
 }
 
 .nav-link {
-    color: #1a1a1a !important;
+    color: #1a1a1a;
 }
 
 .logo-brand {
@@ -52,7 +65,7 @@ p {
 }
 
 .navbar-toggler { 
-    font-size: 40px !important; 
+    font-size: 40px; 
 }
 
 #hero {
@@ -73,16 +86,54 @@ p {
     text-align: center;
 }
 
+.portfolio-container {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+
+.portfolio-container img {
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.portfolio-container:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transition: scale(1.2);
+    transform: scale(1.2);
+}
+
+.portfolio-details {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 9000;
+}
+
+.portfolio-details h2 {
+    margin-bottom: 0px;
+}
+
+.portfolio-details a h2, .portfolio-details a p {
+    color: white;
+}
+
 /* Acomodando el layout */
 .navbar-collapse {
-    flex-grow: 0 !important;
+    flex-grow: 0;
+}
+
+.text-dark {
+    color: black;
 }
 
 /* Media queryes bootstrap */
 
 @media (max-width: 575.98px) { 
     h1 {
-        font-size: 40px !important; 
-        line-height: normal !important;
+        font-size: 40px; 
+        line-height: normal;
     }
 }

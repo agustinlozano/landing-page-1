@@ -29,6 +29,12 @@ a {
     text-decoration: none;
 }
 
+section {
+    padding: 120px 0;
+}
+
+.bg-light-gray { background-color: #f5f5f5; }
+
 .topmargin-xs { margin-top: 15px !important; }
 .topmargin-sm { margin-top: 30px !important; }
 .topmargin-lg { margin-top: 95px !important; }
@@ -129,6 +135,20 @@ a {
     color: black;
 }
 
+.member-container {
+    position: relative;
+    margin: 10px 0;
+}
+
+.member-details {
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    left: 20px
+}
+
+.member-details h5 { margin-bottom: 0px; }
+.member-details ul { margin-top: 15px; }
 /* Media queryes bootstrap */
 
 @media (max-width: 575.98px) { 
